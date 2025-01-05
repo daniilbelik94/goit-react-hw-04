@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { Bars } from 'react-loader-spinner';
+import { Circles } from 'react-loader-spinner';
 
 import SearchBar from './components/SearchBar/SearchBar';
 import ImageGallery from './components/ImageGallery/ImageGallery';
@@ -82,17 +82,15 @@ function App() {
         <ImageGallery images={images} onModalData={modalDataHandler} onOpenModal={openModalHandler} />
       )}
       {loading && (
-        <div className={styles.barsWrapper}>
-          <Bars
-            height='80'
-            width='80'
-            color='#4fa94d'
-            ariaLabel='bars-loading'
-            wrapperStyle={{}}
-            wrapperClass=''
-            visible={true}
-          />
-        </div>
+  <div className={styles.loaderWrapper}>
+    <Circles
+      height="60"
+      width="60"
+      color="#2f47b1"
+      ariaLabel="bars-loading"
+      visible={true}
+    />
+  </div>
       )}
       {images.length > 0 && page < totalPage && !error.isError && <LoadMoreBtn onLoadMore={onLoadMoreHandler} />}
       <ImageModal modalIsOpen={modalIsOpen} onCloseModal={closeModalHandler} modalData={modalData} />

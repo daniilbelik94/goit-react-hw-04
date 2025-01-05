@@ -4,7 +4,8 @@
 }
 .searchForm {
   display: flex;
-  width: 300px;
+  flex-direction: row-reverse;
+  max-width: 420px;
   margin: 0 auto;
 }
 .searchInput {
@@ -16,8 +17,8 @@
   width: 100%;
 }
 .searchBtn {
-  padding: 5px;
+  padding: 5px 8px;
   background-color: transparent;
   border: 1px solid #fff;
-  margin-inline-end: 3px;
+  margin-inline-start: 3px;
 }

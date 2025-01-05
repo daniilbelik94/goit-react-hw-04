@@ -32,7 +32,7 @@ const SearchBar = ({ onSearch }) => {
           placeholder='Search images and photos'
         />
         <button className={styles.searchBtn} type='submit'>
-          🔍
+          Search
         </button>
         <Toaster />
       </form>
