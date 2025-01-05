@@ -1,6 +1,6 @@
 .searchHeader {
   padding: 10px 0;
-  background-color: blue;
+  background-color: rgb(12, 89, 112);
 }
 .searchForm {
   display: flex;
@@ -8,19 +8,16 @@
   margin: 0 auto;
 }
 .searchInput {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   border: none;
+  border-radius: 3px;
   outline: none;
   padding: 5px;
   order: 1;
   width: 100%;
 }
 .searchBtn {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border: none;
   padding: 5px;
-  padding: 5px;
-  background-color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-inline-end: 3px;
 }
